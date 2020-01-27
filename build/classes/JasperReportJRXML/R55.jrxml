@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DefaultReport_for_All" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="766" leftMargin="56" rightMargin="20" topMargin="20" bottomMargin="20" uuid="28bdf99b-5d8e-4716-8081-d7313108cd81">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="424"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="DISCRIPTION" class="java.lang.String"/>
+	<parameter name="LASTC" class="java.lang.String"/>
+	<field name="SA" class="java.lang.String"/>
+	<field name="JHA" class="java.lang.String"/>
+	<field name="SN" class="java.lang.String"/>
+	<field name="CDate" class="java.lang.String"/>
+	<variable name="member_count" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{SA}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="766" height="35" uuid="4e2f40da-6027-446d-a9bf-af419c670c04"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="FMBindumathi" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Y%S ,xld fmd,sia hqO wdndê; rKúre ix.uh]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="35" width="766" height="44" uuid="d1962318-bdec-4a8b-862b-5217af0fc466"/>
+				<textElement>
+					<font fontName="FMMalithi" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DISCRIPTION}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="63" height="20" uuid="72cf3682-bf57-4b86-8399-98fa93edf4d7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="FMMalithi"/>
+				</textElement>
+				<text><![CDATA[idudðl wxlh ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="75" y="0" width="137" height="20" uuid="bbb1535c-4b7f-4d24-b73b-9fecf05759a4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="FMMalithi"/>
+				</textElement>
+				<text><![CDATA[cd ye wxlh ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="212" y="0" width="382" height="20" uuid="683430d1-f35e-452d-98c7-ae7304c29cbe"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="FMMalithi"/>
+				</textElement>
+				<text><![CDATA[ku ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="594" y="0" width="172" height="20" uuid="0c576d77-7008-42b3-ad0c-6c341d1cbf54"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="FMMalithi"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LASTC}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="63" height="20" uuid="492a2982-a176-40e6-aa03-fec1b33a4bdd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Iskoola Pota"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="75" y="1" width="137" height="20" uuid="52de5ccd-e2e0-49b4-a99f-c6eae345c901"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Iskoola Pota"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{JHA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="212" y="0" width="382" height="20" uuid="b1499701-efc8-48f5-b5c2-3727105d3c92"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="FMMalithi"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="594" y="0" width="172" height="20" uuid="4b0fe150-5147-4564-9a75-bddfd7aa5d46"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Iskoola Pota"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="172" height="20" uuid="a8458dca-5926-4708-a9b4-7dd77450bf3a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="FMMalithi"/>
+				</textElement>
+				<text><![CDATA[jd¾;djg wod, idudðlhska ixLHdj ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="172" y="10" width="94" height="20" uuid="1547ae12-6a61-48cf-b408-0a6302e91ac4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Iskoola Pota"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{member_count}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

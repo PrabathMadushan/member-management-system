@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DefaultReport_for_All" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="766" leftMargin="56" rightMargin="20" topMargin="20" bottomMargin="20" uuid="28bdf99b-5d8e-4716-8081-d7313108cd81">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="693"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="RD" class="java.lang.String"/>
+	<field name="MW" class="java.lang.Float"/>
+	<field name="WW" class="java.lang.Float"/>
+	<field name="DWW" class="java.lang.Float"/>
+	<field name="SA" class="java.lang.String"/>
+	<field name="SN" class="java.lang.String"/>
+	<field name="DW" class="java.lang.Float"/>
+	<variable name="mv_total" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[$F{MW}]]></variableExpression>
+	</variable>
+	<variable name="ww_total" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[$F{WW}]]></variableExpression>
+	</variable>
+	<variable name="dww_total" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[$F{DWW}]]></variableExpression>
+	</variable>
+	<variable name="total_total" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[$F{MW}+$F{DW}+$F{WW}+$F{DWW}]]></variableExpression>
+	</variable>
+	<variable name="dw_total" class="java.lang.String" calculation="Sum">
+		<variableExpression><![CDATA[$F{DW}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="75" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="766" height="35" uuid="4e2f40da-6027-446d-a9bf-af419c670c04"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="FMBindumathi" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Y%S ,xld fmd,sia hqO wdndê; rKúre ix.uh]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="52" y="35" width="685" height="40" uuid="d2461083-9927-40c9-b7eb-08ecfeaa9259"/>
+				<textElement>
+					<font fontName="FMMalithi" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{RD}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="23">
+			<staticText>
+				<reportElement x="0" y="0" width="52" height="20" uuid="6e47710b-909f-4e22-b3b6-6d324201bf98"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="FMBindumathi" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[id w]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="0" width="240" height="20" uuid="01985444-c96a-4daa-8f35-4a9ac7efd250"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="FMBindumathi" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[idudðlhdf.a ku ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="472" y="0" width="91" height="20" uuid="65454a03-501b-4072-bb95-e68ff0bba02c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="FMBindumathi" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[õY%du jegqm ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="563" y="0" width="97" height="20" uuid="cc0f6b23-7f0e-4c74-9efc-f338de2d1e99"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="FMBindumathi" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ÿ úY%du jegqm ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="660" y="0" width="105" height="20" uuid="d7251a37-49fe-4094-9bca-6b0de0d8cc78"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="FMBindumathi" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tl;=j ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="292" y="0" width="88" height="20" uuid="d099920f-3f02-4ee8-b2a2-ef25ecc953a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="FMBindumathi" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[uQ,sl jegqm ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="0" width="92" height="20" uuid="3cee90b0-8790-45e4-86aa-3ba4791233ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="FMBindumathi" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[uq¨ oSukd ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="52" height="20" uuid="cdf034b1-085b-41cd-b021-f97fb22702e4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Iskoola Pota" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="52" y="0" width="240" height="20" uuid="d2e353c9-14a2-42e5-829d-4b5748839a04"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="FMMalithi" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="0" width="91" height="20" uuid="5c9d7db3-886f-4bbb-a671-de097c0d1f5c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{WW}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="563" y="0" width="97" height="20" uuid="4aa8356a-6e01-43a5-9744-0066325e6978"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DWW}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="660" y="0" width="105" height="20" uuid="5504e149-1606-4f3e-9430-d42f43d18273"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MW}+$F{DW}+$F{WW}+$F{DWW}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="0" width="88" height="20" uuid="d5223f73-d4a4-43bc-b51e-aa18cbe2ebc7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MW}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="92" height="20" uuid="b79bdbf4-7140-4261-8e74-93a694f710a3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{DW}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="50">
+			<staticText>
+				<reportElement x="21" y="14" width="271" height="20" uuid="7f923272-3add-49f2-8c2c-ad0394b3a7e3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="FMBindumathi" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tl;=j ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="472" y="14" width="91" height="20" uuid="3791b1c7-b6c5-45ec-9cb8-fefc1cbf30b7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{ww_total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="563" y="14" width="97" height="20" uuid="c9c09ac4-92c8-4f0b-bca8-989201f1f49c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{dww_total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="660" y="14" width="106" height="20" uuid="ee17c25a-f46b-44ac-87f4-346d3d979641"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{total_total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="14" width="88" height="20" uuid="e7f4471f-a5c6-4a50-a9eb-8b6f7f7a302e"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{mv_total}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="306" y="34" width="74" height="1" uuid="3389814e-6d81-4fe3-98de-4e0d434521f8"/>
+			</line>
+			<line>
+				<reportElement x="306" y="37" width="74" height="1" uuid="346573e2-0e60-4c31-b25b-8a2aabe4bd25"/>
+			</line>
+			<textField>
+				<reportElement x="380" y="14" width="92" height="20" uuid="34a22e81-a4cf-49d7-979c-127a564e90ed"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{mv_total}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="398" y="37" width="74" height="1" uuid="8440390c-dd22-4eb9-a7a5-589c9d8fc7c1"/>
+			</line>
+			<line>
+				<reportElement x="398" y="34" width="74" height="1" uuid="ac6facdc-75d6-495b-8a7b-d9762fdc2f45"/>
+			</line>
+			<line>
+				<reportElement x="489" y="37" width="74" height="1" uuid="90659e8b-9e26-4127-a45f-15b7dc78b34f"/>
+			</line>
+			<line>
+				<reportElement x="489" y="34" width="74" height="1" uuid="fca8b3dc-ab69-4926-83fd-3a8ac219c5d3"/>
+			</line>
+			<line>
+				<reportElement x="586" y="37" width="74" height="1" uuid="9e95895b-1129-4a11-b302-b7d1d8f857b0"/>
+			</line>
+			<line>
+				<reportElement x="586" y="34" width="74" height="1" uuid="408c8dc0-b6ed-4397-b855-08c0bfe7e2b8"/>
+			</line>
+			<line>
+				<reportElement x="691" y="37" width="74" height="1" uuid="68c7410b-0ef8-46e3-af1c-4ddf354dedc9"/>
+			</line>
+			<line>
+				<reportElement x="691" y="34" width="74" height="1" uuid="23939364-19e2-4db6-8a38-872539d0ac70"/>
+			</line>
+		</band>
+	</summary>
+</jasperReport>
